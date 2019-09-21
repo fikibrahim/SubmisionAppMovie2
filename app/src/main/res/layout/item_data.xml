@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_id"
+        android:layout_marginLeft="@dimen/margin_horizontal_normal"
+        android:layout_marginRight="@dimen/margin_horizontal_normal"
+        android:layout_marginTop="@dimen/margin_vertical_medium"
+        android:layout_marginBottom="@dimen/margin_vertical_medium"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="@dimen/margin_vertical_medium"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/poster_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/poster"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title_id"
+        android:textSize="21sp"
+        android:layout_marginTop="@dimen/margin_horizontal_normal"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_toEndOf="@id/card_id"
+        android:layout_toRightOf="@id/card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_horizontal_normal"
+        android:layout_marginEnd="@dimen/margin_horizontal_normal"/>
+
+    <TextView
+        android:id="@+id/date_id"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_below="@id/title_id"
+        android:layout_toEndOf="@id/card_id"
+        android:layout_toRightOf="@id/card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/margin_horizontal_normal"
+        android:layout_marginEnd="@dimen/margin_horizontal_normal" />
+
+    <TextView
+        android:id="@+id/desc_id"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_below="@id/date_id"
+        android:layout_toEndOf="@id/card_id"
+        android:layout_toRightOf="@id/card_id"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_horizontal_normal"
+        android:layout_marginEnd="@dimen/margin_horizontal_normal" />
+
+
+</RelativeLayout>
